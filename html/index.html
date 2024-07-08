@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/output.css" rel="stylesheet" />
+    <title>Dashboard</title>
+
+    <!-- POPPINES LINK UP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="w-full h-screen bg-[#101010] flex items-start p-5">
+      <!-- sidebar -->
+      <div class="w-[25%] py-[48px] 2xl:py-[65px] pl-[70px]">
+        <!-- HEADER PART / AVATAR PART -->
+        <div class="">
+          <div class="w-[72px] h-[72px] relative">
+            <img
+              src="../assets/profile.png"
+              class="w-full h-full rounded-xl"
+              alt=""
+            />
+            <span
+              class="absolute text-white bg-[#DC3434] h-7 w-7 rounded-full flex items-center justify-center text-xs -top-4 -right-2 font-semibold"
+              >4</span
+            >
+          </div>
+
+          <div class="space-y-[6px] text-white my-6">
+            <p class="font-semibold text-[30px] leading-none">Samantha</p>
+            <p class="text-lg opacity-50">samantha@email.com</p>
+          </div>
+        </div>
+        <div
+          class="mt-[112px] space-y-8 text-[25px] font-semibold leading-snug"
+        >
+          <p>
+            <a href="" class="text-[#878787]">Dashboard</a>
+          </p>
+          <p>
+            <a href="" class="text-[#fff]">Expenses</a>
+          </p>
+          <p>
+            <a href="" class="text-[#878787]">Wallets</a>
+          </p>
+          <p>
+            <a href="" class="text-[#878787]">Summary</a>
+          </p>
+          <p>
+            <a href="" class="text-[#878787]">Accounts</a>
+          </p>
+          <p>
+            <a href="" class="text-[#878787]">Settings</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <div
+        class="w-[75%] flex items-start bg-white h-full rounded-[30px] overflow-hidden"
+      >
+        <!-- EXPANSE BLOCK -->
+        <div class="h-full w-[70%] px-16 2xl:px-24 py-[48px] 2xl:py-[60px]">
+          <div class="w-full">
+            <div class="w-full flex justify-between items-start">
+              <div class="space-y-2">
+                <p
+                  class="font-semibold text-[40px] text-[#262A41] leading-snug"
+                >
+                  Expenses
+                </p>
+                <p class="text-[#888888] font-normal">01 - 25 March, 2020</p>
+              </div>
+              <div class="flex items-center space-x-3 py-[14px]">
+                <div class="flex items-center space-x-[-8px]">
+                  <div
+                    class="w-8 h-8 z-10 rounded-full border-2 overflow-hidden border-white"
+                  >
+                    <img
+                      src="../assets/1.png"
+                      class="w-full h-full object-contain"
+                      alt=""
+                    />
+                  </div>
+
+                  <div
+                    class="w-8 h-8 z-[5] rounded-full border-2 overflow-hidden border-white"
+                  >
+                    <img
+                      src="../assets/2.png"
+                      class="w-full h-full object-contain"
+                      alt=""
+                    />
+                  </div>
+
+                  <div
+                    class="w-8 h-8 rounded-full border-2 overflow-hidden border-white"
+                  >
+                    <img
+                      src="../assets/3.png"
+                      class="w-full h-full object-contain"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <img src="../assets/plus.svg" alt="" />
+              </div>
+            </div>
+
+            <div
+              id="expense_graph"
+              class="w-full my-12 flex items-end space-x-2 1700px:space-x-3"
+            >
+              <!-- <div
+                style="height: 40px"
+                class="w-5 2xl:w-6 hover:bg-[#157AFF] bg-[#d0e4ff] cursor-pointer"
+              ></div> -->
+            </div>
+
+            <div class="space-y-[60px]">
+              <!-- Today section -->
+
+              <div class="space-y-6">
+                <div
+                  class="flex items-center w-full justify-between py-2 border-b border-[#DEDEDE]"
+                >
+                  <p
+                    class="font-avenir-semibold text-[18px] leading-snug text-[#262A41]"
+                  >
+                    Today
+                  </p>
+                  <img src="../assets/more.svg" class="cursor-pointer" alt="" />
+                </div>
+
+                <!-- Grocery -->
+                <div class="w-full flex items-start justify-between">
+                  <div class="flex items-center space-x-4">
+                    <img src="../assets/grocery.svg" alt="" />
+
+                    <div class="space-y-1">
+                      <p class="font-medium text-[#273240] text-base">
+                        Grocery
+                      </p>
+                      <p class="text-sm text-[#404852] leading-tight">
+                        5:12 pm • Belanja di pasar
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="font-semibold text-base">-326.800</p>
+                </div>
+
+                <!-- Transportation -->
+                <div class="w-full flex items-start justify-between">
+                  <div class="flex items-center space-x-4">
+                    <img src="../assets/transportatiom.svg" alt="" />
+
+                    <div class="space-y-1">
+                      <p class="font-medium text-[#273240] text-base">
+                        Transportation
+                      </p>
+                      <p class="text-sm text-[#404852] leading-tight">
+                        5:12 pm • Naik bus umum
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="font-semibold text-base">-15.000</p>
+                </div>
+
+                <!-- HOUSING -->
+                <div class="w-full flex items-start justify-between">
+                  <div class="flex items-center space-x-4">
+                    <img src="../assets/house.svg" alt="" />
+
+                    <div class="space-y-1">
+                      <p class="font-medium text-[#273240] text-base">
+                        Housing
+                      </p>
+                      <p class="text-sm text-[#404852] leading-tight">
+                        5:12 pm • Bayar Listrik
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="font-semibold text-base">-185.750</p>
+                </div>
+              </div>
+
+              <!-- Monday, 23 March 2020 -->
+
+              <div class="space-y-6">
+                <div
+                  class="flex items-center w-full justify-between py-2 border-b border-[#DEDEDE]"
+                >
+                  <p
+                    class="font-avenir-semibold text-[18px] leading-snug text-[#262A41]"
+                  >
+                    Monday, 23 March 2020
+                  </p>
+                  <img src="../assets/more.svg" class="cursor-pointer" alt="" />
+                </div>
+
+                <!-- Food and Drink -->
+                <div class="w-full flex items-start justify-between">
+                  <div class="flex items-center space-x-4">
+                    <img src="../assets/food.svg" alt="" />
+
+                    <div class="space-y-1">
+                      <p class="font-medium text-[#273240] text-base">
+                        Food and Drink
+                      </p>
+                      <p class="text-sm text-[#404852] leading-tight">
+                        5:12 pm • Makan Steak
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="font-semibold text-base">-156.000</p>
+                </div>
+
+                <!-- Entertainment -->
+                <div class="w-full flex items-start justify-between">
+                  <div class="flex items-center space-x-4">
+                    <img src="../assets/entertainment.svg" alt="" />
+
+                    <div class="space-y-1">
+                      <p class="font-medium text-[#273240] text-base">
+                        Entertainment
+                      </p>
+                      <p class="text-sm text-[#404852] leading-tight">
+                        5:12 pm • Nonton Bioskop
+                      </p>
+                    </div>
+                  </div>
+
+                  <p class="font-semibold text-base">-35.200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Where your money go block -->
+        <div
+          class="w-[30%] h-full bg-[#F9FAFC] py-[60px] 2xl:py-[75px] px-[30px] 2xl:px-10 flex flex-col"
+        >
+          <div class="space-y-[30px]">
+            <p class="text-[#262A41] font-avenir-semibold text-[22px]">
+              Where your money go?
+            </p>
+
+            <div class="w-full space-y-2">
+              <div class="flex items-center justify-between text-[#273240]">
+                <p class="text-sm font-medium leading-[24px]">
+                  Food and Drinks
+                </p>
+
+                <p class="text-sm font-normal leading-[24px]">872.400</p>
+              </div>
+
+              <div class="w-full h-[5px] bg-[#ECEFF5] rounded-[5px] relative">
+                <div class="h-full rounded-[5px] w-[70px] bg-[#31BA96]"></div>
+              </div>
+            </div>
+
+            <!-- Shopping -->
+            <div class="w-full space-y-2">
+              <div class="flex items-center justify-between text-[#273240]">
+                <p class="text-sm font-medium leading-[24px]">Shopping</p>
+
+                <p class="text-sm font-normal leading-[24px]">1.378.200</p>
+              </div>
+
+              <div class="w-full h-[5px] bg-[#ECEFF5] rounded-[5px] relative">
+                <div class="h-full rounded-[5px] w-[110px] bg-[#31BA96]"></div>
+              </div>
+            </div>
+
+            <!-- Housing -->
+            <div class="w-full space-y-2">
+              <div class="flex items-center justify-between text-[#273240]">
+                <p class="text-sm font-medium leading-[24px]">Housing</p>
+
+                <p class="text-sm font-normal leading-[24px]">928.500</p>
+              </div>
+
+              <div class="w-full h-[5px] bg-[#ECEFF5] rounded-[5px] relative">
+                <div class="h-full rounded-[5px] w-[90px] bg-[#31BA96]"></div>
+              </div>
+            </div>
+
+            <!-- Transportation -->
+            <div class="w-full space-y-2">
+              <div class="flex items-center justify-between text-[#273240]">
+                <p class="text-sm font-medium leading-[24px]">Transportation</p>
+
+                <p class="text-sm font-normal leading-[24px]">420.700</p>
+              </div>
+
+              <div class="w-full h-[5px] bg-[#ECEFF5] rounded-[5px] relative">
+                <div class="h-full rounded-[5px] w-[60px] bg-[#31BA96]"></div>
+              </div>
+            </div>
+
+            <!-- Vehicle -->
+            <div class="w-full space-y-2">
+              <div class="flex items-center justify-between text-[#273240]">
+                <p class="text-sm font-medium leading-[24px]">Vehicle</p>
+
+                <p class="text-sm font-normal leading-[24px]">520.000</p>
+              </div>
+
+              <div class="w-full h-[5px] bg-[#ECEFF5] rounded-[5px] relative">
+                <div class="h-full rounded-[5px] w-[90px] bg-[#31BA96]"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Save more money -->
+          <div
+            class="mt-auto relative bg-[#EDF0F6] rounded-2xl 2xl:rounded-3xl px-6 mx-auto w-[100%] pt-[76px] pb-[28px]"
+          >
+            <div
+              class="flex items-end absolute top-[-36px] left-0 right-0 justify-between px-6"
+            >
+              <img src="../assets/top.svg" alt="" />
+              <img src="../assets/plant.svg" alt="" />
+            </div>
+
+            <div>
+              <p class="font-semibold text-[#273240] text-lg">
+                Save more money
+              </p>
+              <p class="text-[#757A83] mt-1 mb-5 text-sm">
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim.
+              </p>
+
+              <button
+                class="w-full bg-[#101010] text-white font-medium text-sm text-center p-[13px] rounded-lg"
+              >
+                VIEW TIPS
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>
